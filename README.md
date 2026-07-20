@@ -2,12 +2,12 @@
 This project provides a modular pipeline designed to securely de-identify and pseudonymize Protected Health Information (PHI) from medical imaging datasets.
 Medical images suffer from the "iceberg problem," where sensitive identifiers are visible in the image pixels and hidden within the DICOM structural metadata.
 This pipeline acts as an automated rescue mission. It systematically scrubs the dataset to satisfy the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule's Safe Harbor method.
-By utilizing mathematically perfect bounding box coordinates from a previously established ground truth, this system precisely masks visual PHI and implements a highly secure 16-character alphanumeric pseudonymization system for safe AI research and validation.
+By utilizing mathematically perfect bounding box coordinates from a previously established ground truth(refer to the readme of Syhtetic_PHI_Generator repo), this system precisely masks visual PHI and implements a highly secure 16-character alphanumeric pseudonymization system for safe AI research and validation.
 
 ## 📦 Table of Contents
 - Architecture & Modules
 - The 16-Character Digital ID System
-- Dataset Overview
+- Original Dataset Overview
 - Tech Stack
 - Installation & Setup
 - Usage
@@ -36,7 +36,7 @@ To maintain organized, traceable data while replacing direct identifiers, this p
 - IMG# (4 digits): Sequential image number (e.g., 0001).
 Example Output: STF-A9K3P-US00-0001.dcm
 
-## Dataset Overview
+## Original Dataset Overview
 - Source: Stanford Lung Database (OpenPOCUS).
 - Scope: Images derived from a multi-center study involving 226 adult patients presenting to emergency departments with respiratory symptoms.
 - Format: Ultrasound images encapsulated in the Digital Imaging and Communications in Medicine (DICOM) standard format.
