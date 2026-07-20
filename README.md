@@ -1,8 +1,8 @@
 # 🚀 DICOM De-Identification & Pseudonymization Pipeline
 This project provides a modular pipeline designed to securely de-identify and pseudonymize Protected Health Information (PHI) from medical imaging datasets.
-Medical images suffer from the "iceberg problem," where sensitive identifiers are visible in the image pixels and hidden within the DICOM structural metadata.
-This pipeline acts as an automated rescue mission. It systematically scrubs the dataset to satisfy the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule's Safe Harbor method.
-By utilizing mathematically perfect bounding box coordinates from a previously established ground truth(refer to the readme of Syhtetic_PHI_Generator repo), this system precisely masks visual PHI and implements a highly secure 16-character alphanumeric pseudonymization system for safe AI research and validation.
+-  Medical images suffer from the "iceberg problem," where sensitive identifiers are visible in the image pixels and hidden within the DICOM structural metadata.
+- This pipeline acts as an automated rescue mission. It systematically scrubs the dataset to satisfy the Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule's Safe Harbor method.
+- By utilizing mathematically perfect bounding box coordinates from a previously established ground truth(refer to the readme of Syhtetic_PHI_Generator repo), this system precisely masks visual PHI and implements a highly secure 16-character alphanumeric pseudonymization system for safe AI research and validation.
 
 ## 📦 Table of Contents
 - Architecture & Modules
